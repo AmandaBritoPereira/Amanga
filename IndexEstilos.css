@@ -1,6 +1,19 @@
-.display {
+body  {  	
+	background: #F8F8FF;  
+	line-height: 1.5;
+	font-size: 20px;
+	font-family: arial;
+  	font-style: normal;
+}    
+
+.displayFlex {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+}
+
+.espace {
+	padding-bottom: 1em;
 }
 
 li {
@@ -9,7 +22,44 @@ li {
 
 a {
   text-decoration:none; 
-  font-family: arial;
-  font-style: normal;
-  color: #ff8c00;
+}
+
+.textoLaranja {
+	color: #ff8c00;
+}
+
+.textoBranco {
+	color: white;
+}
+
+.displayCenter {
+	display: flex;
+	justify-content: center;
+}
+
+h4{
+	text-align: center;
+}
+
+.contornoRedondo{
+	border-radius: 10px;
+}
+.container  {  	
+	display: flex;
+	justify-content: column;
+	justify-content: center;
+}
+
+.contents {
+	width: 70%;
+	text-align: justify; 
+	padding: 25px;
+	/*
+	Pensar sobre:
+	background: #F4A460; FFDEAD*/
+}
+
+footer {
+	background: #D2691E;
+	margin: 0px;
 }
