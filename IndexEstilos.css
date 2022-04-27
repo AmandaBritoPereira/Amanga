@@ -1,4 +1,4 @@
-body  {  	
+.padrao  {  	
 	background: #F8F8FF;  
 	line-height: 1.5;
 	font-size: 20px;
@@ -14,10 +14,6 @@ body  {
 
 .espace {
 	padding-bottom: 1em;
-}
-
-li {
-	list-style-type: none;
 }
 
 a {
@@ -37,14 +33,15 @@ a {
 	justify-content: center;
 }
 
-h4{
+.titulo{
 	text-align: center;
+	font-weight: bold;
 }
 
 .contornoRedondo{
 	border-radius: 10px;
 }
-.container  {  	
+.container_Contents {  	
 	display: flex;
 	justify-content: column;
 	justify-content: center;
@@ -56,10 +53,21 @@ h4{
 	padding: 25px;
 	/*
 	Pensar sobre:
-	background: #F4A460; FFDEAD*/
+	background: #F4A460;  #D2691E*/
 }
 
-footer {
-	background: #D2691E;
-	margin: 0px;
+.cabecalho {
+	background-image: linear-gradient(#D2691E, #ff6128);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	padding: 1em;
+}
+
+.espaco_Line{
+	line-height: 1.7em;
+}
+.espaco_Manga {
+	padding-top: 1em;
 }
