@@ -42,9 +42,17 @@ a {
 	border-radius: 10px;
 }
 
-.imgAvulsaPrincipal {
-	width: 14em;
-	height: 14em;
+@media(max-width: 500px){
+	.imgAvulsaPrincipal {
+		width: 9em;
+		height: 9em;
+	}
+}
+@media(min-width: 501px){
+	.imgAvulsaPrincipal {
+		width: 14em;
+		height: 14em;
+	}
 }
 
 .container_Contents {  	
