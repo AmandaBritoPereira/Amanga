@@ -41,6 +41,12 @@ a {
 .contornoRedondo{
 	border-radius: 10px;
 }
+
+.imgAvulsaPrincipal {
+	width: 14em;
+	height: 14em;
+}
+
 .container_Contents {  	
 	display: flex;
 	justify-content: column;
