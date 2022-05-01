@@ -12,6 +12,17 @@
 	align-items: center;
 }
 
+@media (max-width: 500px){
+	.displayFlex {
+	  	width: 100%
+	}	
+}
+@media (min-width: 501px){
+	.displayFlex {
+	  	width: 100%
+	}	
+}
+
 .espace {
 	padding-bottom: 1em;
 }
