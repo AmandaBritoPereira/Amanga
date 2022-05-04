@@ -32,13 +32,13 @@
 		padding-bottom: 0.6em;
 		border-style: none;
 	}
+		.menuButton {
+		border-style: none;
+		background-color:  #F8F8FF;
+	}
 	.menuExpandido {
 		flex-direction: column;
 		display:none;
-	}
-	.menuButton {
-		border-style: none;
-		background-color:  #F8F8FF;
 	}
 	/* apareceMenuExpandido habilitada apenas no JavaScript*/
 	.apareceMenuExpandido {
@@ -69,7 +69,10 @@
 	.cabecalhoBoxDireita {
 		width: 83%;
 	}
-	.cabecalhoMenu{
+	.menuButton {
+		display: none;
+	}
+	.menuExpandido{
 		width: 100%;
 		justify-content: space-around;
 		display: flex;
