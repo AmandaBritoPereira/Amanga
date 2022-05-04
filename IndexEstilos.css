@@ -18,36 +18,46 @@
 		justify-content: space-around;
 		margin-top: 1em;
 	}
-	.cabecalhoBoxEsquerda {
-	  	width: 50%
-	  	justify-content: space-between;
-	}	
-		.cabecalhoLogo{
-			height: 4em;
-		}
+		.cabecalhoBoxEsquerda {
+		  	width: 50%
+		  	justify-content: space-between;
+		}	
+			.cabecalhoLogo{
+				height: 4em;
+			}
+	.cabecalhoBoxDireita {
+		width: 50%;
+	}
 	.cabecalhoDireita {
 		justify-content: flex-end;
 		display: flex;
 	}
-	.cabecalhoIcone {
-		height: 5em;
-		padding-top: 0.6em;
-		padding-bottom: 0.6em;
-		border-style: none;
-	}
-	.menuButton {
-		border-style: none;
-		background-color:  #F8F8FF;
-	}
-	.menuExpandido {
-		flex-direction: column;
-		display:none;
-	}
+
+		.menuButton {
+			border-style: none;
+			background-color:  #F8F8FF;
+		}
+		.menuExpandido {
+			flex-direction: column;
+			display:none;
+		}
+			.cabecalhoIcone {
+				height: 5em;
+				padding-top: 0.6em;
+				padding-bottom: 0.6em;
+				border-style: none;
+			}
 	/* apareceMenuExpandido habilitada apenas no JavaScript*/
 	.apareceMenuExpandido {
 		display:block;
 		position:absolute;
 		background-color: #F8F8FF;
+		padding: 0.2em 0 1em 1.5em;
+		border-left: 1px solid #090;
+		border-bottom: 1px solid #090;
+		width: 50%;
+		border-radius: 0 0 0 1em;
+
 	}
 }
 
@@ -59,28 +69,28 @@
 		justify-content: space-around;
 		margin-top: 1em;
 	}
-	.cabecalhoBoxEsquerda {
-	  	width: 17%;
-	}	
-	.cabecalhoBoxLogo {
-		display: flex;
-		justify-content: center;
-	}
-	.cabecalhoIcone {
-		display: none;
-	}
+		.cabecalhoBoxEsquerda {
+		  	width: 17%;
+		}	
+			.cabecalhoBoxLogo {
+				display: flex;
+				justify-content: center;
+			}
 	.cabecalhoBoxDireita {
 		width: 83%;
 	}
-	.menuButton {
-		display: none;
-	}
-	.menuExpandido{
-		width: 100%;
-		justify-content: space-around;
-		display: flex;
-		padding-top:  1em;
-	}
+		.menuButton {
+			display: none;
+		}
+		.menuExpandido{
+			width: 100%;
+			justify-content: space-around;
+			display: flex;
+			padding-top:  1em;
+		}
+			.cabecalhoIcone {
+				display: none;
+			}
 }
 
 .espace {
