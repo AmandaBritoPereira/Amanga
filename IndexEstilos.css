@@ -22,17 +22,20 @@
 	  	width: 50%
 	  	justify-content: space-between;
 	}	
+		.cabecalhoLogo{
+			height: 4em;
+		}
 	.cabecalhoDireita {
 		justify-content: flex-end;
 		display: flex;
 	}
 	.cabecalhoIcone {
-		height: 4em;
+		height: 5em;
 		padding-top: 0.6em;
 		padding-bottom: 0.6em;
 		border-style: none;
 	}
-		.menuButton {
+	.menuButton {
 		border-style: none;
 		background-color:  #F8F8FF;
 	}
@@ -59,7 +62,7 @@
 	.cabecalhoBoxEsquerda {
 	  	width: 17%;
 	}	
-	.cabecalhoLogo {
+	.cabecalhoBoxLogo {
 		display: flex;
 		justify-content: center;
 	}
