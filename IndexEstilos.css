@@ -13,14 +13,68 @@
 }
 
 @media (max-width: 500px){
-	.displayFlex {
-	  	width: 100%
+	.cabecalhoOrdem {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 1em;
+	}
+	.cabecalhoBoxEsquerda {
+	  	width: 50%
+	  	justify-content: space-between;
 	}	
+	.cabecalhoDireita {
+		justify-content: flex-end;
+		display: flex;
+	}
+	.cabecalhoIcone {
+		height: 4em;
+		padding-top: 0.6em;
+		padding-bottom: 0.6em;
+		border-style: none;
+	}
+	.menuExpandido {
+		flex-direction: column;
+		display:none;
+	}
+	.menuButton {
+		border-style: none;
+		background-color:  #F8F8FF;
+	}
+	/* apareceMenuExpandido habilitada apenas no JavaScript*/
+	.apareceMenuExpandido {
+		display:block;
+		position:absolute;
+		background-color: #F8F8FF;
+	}
 }
+
 @media (min-width: 501px){
-	.displayFlex {
-	  	width: 100%
+	.cabecalhoOrdem {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		margin-top: 1em;
+	}
+	.cabecalhoBoxEsquerda {
+	  	width: 17%;
 	}	
+	.cabecalhoLogo {
+		display: flex;
+		justify-content: center;
+	}
+	.cabecalhoIcone {
+		display: none;
+	}
+	.cabecalhoBoxDireita {
+		width: 83%;
+	}
+	.cabecalhoMenu{
+		width: 100%;
+		justify-content: space-around;
+		display: flex;
+		padding-top:  1em;
+	}
 }
 
 .espace {
@@ -28,7 +82,7 @@
 }
 
 a {
-  text-decoration:none; 
+	text-decoration:none; 
 }
 
 .textoLaranja {
@@ -76,9 +130,6 @@ a {
 	width: 70%;
 	text-align: justify; 
 	padding: 25px;
-	/*
-	Pensar sobre:
-	background: #F4A460;  #D2691E*/
 }
 
 .cabecalho {
@@ -93,6 +144,6 @@ a {
 .espaco_Line{
 	line-height: 1.7em;
 }
-.espaco_Manga {
+.espacoIcone {
 	padding-top: 1em;
 }

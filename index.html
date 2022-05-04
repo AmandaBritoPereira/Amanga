@@ -9,10 +9,21 @@
 </head>
 
 <body class="padrao">
-	<header>
-		<nav>
-			<ul class="displayFlex">
-				<li><a href="index.html"><img src="https://i.imgur.com/FuYIVYu.png"/></a></li>
+	<header class="cabecalhoOrdem">
+		
+		<nav class="cabecalhoBoxEsquerda">
+			<ul class="cabecalhoLogo">
+				<li><a href="index.html"><img src="https://i.imgur.com/FuYIVYu.png" /></a></li>
+			</ul>
+		</nav>
+		<nav class="cabecalhoBoxDireita">
+			<div class="cabecalhoDireita">
+				<button class="menuButton" id="menuExpande">
+					<img src="https://i.imgur.com/UNsQTYm.png" class="cabecalhoIcone"/>
+				</button>
+			</div>
+			
+			<ul id="cabecalhoMenu" class="menuExpandido">
 				<li><a href="index.html" class="textoLaranja">Atualmente</a></li>
 				<li><a href="Curriculo.html" class="textoLaranja">Currículo</a></li>
 				<li><a href="Trajetoria.html" class="textoLaranja">Minha trajetória</a></li>
@@ -30,19 +41,10 @@
 				<div class="displayFlex">
 					<a><img src="https://i.imgur.com/oaYi93b.jpg" class="contornoRedondo imgAvulsaPrincipal"  /></a>
 					<a><img src="https://i.imgur.com/23OU7gu.png" class="contornoRedondo imgAvulsaPrincipal" /></a>
-				</div>
+					<!-- <a><img src="https://i.imgur.com/ygqpIX1.png" class="contornoRedondo imgAvulsaPrincipal"/></a> -->
+				</div>			
 			</div>
 		</div>
- 	<!-- 
- 	Home (Falar um pouco sobre mim no agora. Colocar as notas no curso de analise e desenvolvimento de sistemas, pontos importantes, missão, visão e valores)
-
- 	Minha trajetória (escrever sobre as escolhas psico - desenvolvimento, minhas escolhas pessoais e informações mais abertas, Nig, vitor, xuxu)
-
-	Curriculo já elaborado. Cursos detalhados, Páginas criadas (mawé), Informações sobre o projeto mawé.
-	melhoria: com opção de imprimir, "Resumo" (o que já tá pronto) ou completo (o que está na pagina)
-	melhoria: contrato para publicar estrutura de freelas. Seguido, por página de Projetos.
-
-	Contatos: pessoal e profissional -->
 	</main>
 
 	<footer>
@@ -51,9 +53,11 @@
 				<text><a href="Trajetoria.html" class="textoBranco espaco_Line">Minha trajetória</a></text>
 				<text><a href="Curriculo.html" class="textoBranco espaco_Line">Curriculo</a></text>
 				<text><a href="Contatos.html" class="textoBranco espaco_Line">Contatos</a></text>
-			<a class="espaco_Manga" href="index.html"><img src="https://i.imgur.com/FuYIVYu.png"/></a>
+			<a class="espacoIcone" href="index.html"><img src="https://i.imgur.com/FuYIVYu.png"/></a>
 		</nav>
 	</footer>
-
 </body>
+
+	<script type="text/javascript" src="scripts/main.js"></script>
+
 </html>
