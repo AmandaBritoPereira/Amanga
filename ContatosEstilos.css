@@ -13,16 +13,34 @@
 	padding: 25px;
 }
 
-.iconeCentralizado{
-	text-align: center;
+@media(max-width: 631px){
+	.iconeRedesSociais {
+		padding-top: 0.2em;
+		padding-bottom: 2em;
+		color: #e45c04;
+		font-size: 3em;
+	}
+	.iconeRedesSociaisMeio{
+		padding-right: 0.5em;
+		padding-left: 0.5em;
+	}
+	.top{
+		padding-top: 3em;
+	}
+	.iconeCentralizado{
+		text-align: center;
+	}
 }
-
-.iconeRedesSociais {
-	padding: 0.3em 1em 2em 1em;
-	color: #e45c04;
-	font-size: 2.5em;
-	;
-}
-.top{
-	padding-top: 3em;
+@media(min-width: 632px){
+	.iconeRedesSociais {
+		padding: 0.3em 1em 2em 1em;
+		color: #e45c04;
+		font-size: 2.5em;
+	}
+	.top{
+		padding-top: 3em;
+	}
+	.iconeCentralizado{
+		text-align: center;
+	}
 }
