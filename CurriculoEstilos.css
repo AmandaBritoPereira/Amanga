@@ -1,0 +1,156 @@
+@media(max-width: 500px){
+  .page{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  position: relative;
+  }
+  .card{
+  border-radius: var(--timelineCardBorderRadius, 0px 35px 35px 0px);
+  }
+}
+
+@media(min-width: 501px){
+  .page{
+  width: 70%;
+  padding: 0rem 0rem 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  }
+  .card{
+  border-radius: var(--timelineCardBorderRadius, 0px 15px 15px 0px);
+  }
+}
+
+.timeline{ /*Linhas*/
+  --timelineMainColor: #e45c04;
+  --uiTimelineMainColor: var(--timelineMainColor, #222); /*linhas cronologia*/
+  --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff); /*cor texto ano*/
+
+  display: var(--timelineDisplay, grid);
+  grid-row-gap: var(--timelineGroupsGap, 1.3rem); /*altura final da caixa de texto*/
+  border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));/*grossura linha 1 cronologia*/
+  padding-top: 0rem; /*topo da linha*/
+  padding-bottom: 1.5rem; /*final da linha*/
+}
+
+.timeline__group{
+  /*margin-top: -1px;  */
+  margin-left:-1px;
+}
+
+.time{
+  display: var(--timeDisplay, inline-flex);
+  padding: var(--timePadding, .25rem 1.25rem .25rem); /*Caixa de texto mês*/
+  background-color: var(--timeBackgroundColor, #e9e9e9); /*Cor do mês*/
+  color: var(--timeColor, currentColor); /*Base cor do ano*/
+  font-size: .75rem; /*mês*/
+  font-weight: var(--timeFontWeight, 500); /*mês*/
+  text-transform: var(--timeTextTransform, uppercase); /*Letra maiuscula do mês*/
+  margin-bottom: .5rem;
+}
+
+.timeline__year{
+  border-radius:0px 5px 5px 0px; /*Borda do retangulo ano*/
+  --timePadding: var(--timelineYearPadding, .5rem 1.5rem); /*Retangulo laranja ano, altura x largura*/
+  --timeColor: var(--uiTimelineSecondaryColor); /*texto cor ano*/
+  --timeBackgroundColor: var(--uiTimelineMainColor); /*background cor ano*/
+  --timeFontWeight: var(--timelineYearFontWeight, 400); /*Acima de 550, o ano vira font: bold*/
+}
+
+.timeline__cards{
+  display: var(--timeloneCardsDisplay, grid);
+  grid-row-gap: var(--timeloneCardsGap, 1.5rem); /*espaçamento entre as caixas de texto*/
+  overflow: hidden;
+  padding-top: .25rem; /* 1 */
+  padding-bottom: .25rem; /* 1 */
+}
+
+.timeline__card{
+  position: relative;
+  margin-left: var(--timelineCardLineGap, 1.2rem); /*Espaçamento entre a linha e a caixa de texto*/
+}
+
+.timeline__card::before{
+  content: "";
+  width: 100%;
+  height: var(--timelineCardLineWidth, 3px);
+  background-color: var(--timelineCardLineBackgroundColor, var(--uiTimelineMainColor));
+
+  position: absolute;
+  top: var(--timelineCardLineTop, 0rem); /*altura da conexão entre linha e caixa de texto*/
+  left: -50%;
+  z-index: -1;
+}
+.card{
+  padding: var(--timelineCardPadding, 1.15rem 1.4rem 1rem);
+  border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
+  box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
+  background-color: var(--timelineCardBackgroundColor, #fff);
+}
+
+.timeline__month{
+   border-radius: 5px;
+}
+
+/*.time__month{
+  margin-left: var(--timelineMounthMarginLeft, .25em); caso seja necessário acrescentar o dia, informar em um <span> dia </span> acima do mês.
+} */
+
+.card__content{
+  /*margin-top: var(--cardContentMarginTop, .5rem);*/
+}
+
+.card__title{
+  /*--rTitleMarginTop: var(--cardTitleMarginTop, 1rem);*/
+  font-size: 1.25rem; /*titulo*/
+  line-height: var(--cssTypographyLineHeight, 1.70);
+  font-weight: bold;
+
+  margin-top: var(--rTitleMarginTop, 0) !important; /*inicializador da variavel*/
+  margin-bottom: var(--rTitleMarginBottom, 0) !important;
+}
+
+p:not([class]){
+  line-height: var(--cssTypographyLineHeight, 1.70);
+  margin-top: var(--cssTypographyBasicMargin, 1em);
+  margin-bottom: 0;
+}
+
+p:not([class]):first-child{
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------- */
+.linktr{
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+  text-align: center;
+}
+
+.linktr__goal{
+  background-color: rgb(209, 246, 255);
+  color: rgb(8, 49, 112);
+  box-shadow: rgb(8 49 112 / 24%) 0px 2px 8px 0px;
+  border-radius: 2rem;
+  padding: .75rem 1.5rem;
+}
+
+.r-link{
+    --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
+    --uirLinkTextColor: var(--rLinkTextColor);
+    --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+
+    display: var(--uirLinkDisplay) !important;
+    color: var(--uirLinkTextColor) !important;
+    text-decoration: var(--uirLinkTextDecoration) !important;
+}

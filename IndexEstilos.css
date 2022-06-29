@@ -1,10 +1,38 @@
 .padrao  {  	
 	background: #F8F8FF;  
 	line-height: 1.5;
-	font-size: 20px;
 	font-family: arial;
   	font-style: normal;
-}    
+}
+.font20{
+	font-size: 20px;
+}
+.font18{
+	font-size: 18px;
+}
+.font16{
+	font-size: 16px;
+}
+
+@media(max-width: 500px){
+	.contents {
+		width: 85%;
+		text-align: justify; 
+		padding: 25px;
+	}
+}
+@media(min-width: 501px){
+	.contents {
+	width: 70%;
+	text-align: justify; 
+	padding: 25px;
+}
+}
+.container_Contents {  	
+	display: flex;
+	justify-content: column;
+	justify-content: center;
+}
 
 .displayFlex {
 	display: flex;
@@ -57,7 +85,7 @@
 		border-bottom: 1px solid #090;
 		width: 50%;
 		border-radius: 0 0 0 1em;
-
+		line-height: 1.7; /*Espaçamento entre as linhas*/
 	}
 }
 
@@ -134,18 +162,6 @@ a {
 		width: 14em;
 		height: 14em;
 	}
-}
-
-.container_Contents {  	
-	display: flex;
-	justify-content: column;
-	justify-content: center;
-}
-
-.contents {
-	width: 70%;
-	text-align: justify; 
-	padding: 25px;
 }
 
 .cabecalho {
