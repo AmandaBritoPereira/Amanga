@@ -5,6 +5,7 @@
   margin-right: auto;
   z-index: -1;
   position: relative;
+  padding-top: 1em;
   }
   .card{
   border-radius: var(--timelineCardBorderRadius, 0px 35px 35px 0px);
@@ -13,15 +14,41 @@
 
 @media(min-width: 501px){
   .page{
-  width: 70%;
-  padding: 0rem 0rem 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 16px;
+    width: 70%;
+    padding: .8em 0rem 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
   }
   .card{
-  border-radius: var(--timelineCardBorderRadius, 0px 15px 15px 0px);
+    border-radius: var(--timelineCardBorderRadius, 0px 15px 15px 0px);
   }
+}
+
+.caixaButton{
+  height: 3em;
+}
+.buttonEstilo {
+  padding: .4em .45em;
+  border-color: #FFFFFF;
+  border-radius: 10px;
+   background-color: #f7f7f7;
+}
+.buttonEstilo:hover {
+  background-color: #fafaff;
+  transition: 0.3s;
+}
+.textoButton{
+  color: #5a5752;
+}
+.textoButton:hover{
+  color: #ff8c00;
+  transition: 0.3s;
+}
+.containerContents_Buttons{
+  display: flex;
+  /*justify-content: space-between;*/
+  justify-content: flex-end;
 }
 
 .timeline{ /*Linhas*/

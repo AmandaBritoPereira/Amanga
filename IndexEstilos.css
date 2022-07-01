@@ -18,14 +18,14 @@
 	.contents {
 		width: 85%;
 		text-align: justify; 
-		padding: 25px;
+		padding: 1em 25px 25px 25px;
 	}
 }
 @media(min-width: 501px){
 	.contents {
 	width: 70%;
 	text-align: justify; 
-	padding: 25px;
+	padding: 0.6em 25px 25px 25px;
 }
 }
 .container_Contents {  	
@@ -71,8 +71,6 @@
 		}
 			.cabecalhoIcone {
 				height: 5em;
-				padding-top: 0.6em;
-				padding-bottom: 0.6em;
 				border-style: none;
 			}
 	/* apareceMenuExpandido habilitada apenas no JavaScript*/
@@ -114,7 +112,7 @@
 			width: 100%;
 			justify-content: space-around;
 			display: flex;
-			padding-top:  1em;
+			padding-top:  0.3em;
 		}
 			.cabecalhoIcone {
 				display: none;
@@ -122,7 +120,7 @@
 }
 
 .espace {
-	padding-bottom: 1em;
+	padding-bottom: 0.9em;
 }
 
 a {
@@ -145,6 +143,8 @@ a {
 .titulo{
 	text-align: center;
 	font-weight: bold;
+	padding-top: .6em;
+	padding-bottom: 1.1em;
 }
 
 .contornoRedondo{
