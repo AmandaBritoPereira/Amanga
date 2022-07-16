@@ -55,6 +55,7 @@
 			}
 	.cabecalhoBoxDireita {
 		width: 50%;
+		z-index: 1;
 	}
 	.cabecalhoDireita {
 		justify-content: flex-end;
@@ -128,7 +129,12 @@ a {
 }
 
 .textoLaranja {
-	color: #ff8c00;
+	color: #e45c04; /*laranja*/
+}
+.textoLaranja:hover {
+	/*background-color: #FF8C00;
+	color: #FFFFFF ;
+	padding: 0.3em;*/
 }
 
 .textoBranco {
